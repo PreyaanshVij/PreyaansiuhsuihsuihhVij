@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <title>Login And Register</title>
+</head>
+<body>
+<div class="loginbox">
+    <img src="{{ url_for('static', filename='me1.jpeg') }}" class="pic">
+        <h1>Login Here</h1>
+    <form method="POST" action="/dashboard">
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="submit" value="Login">
+        <a href="#">Lost Your Password?</a><br>
+        <a href="#">Don't Have An Account?</a>
+    </form>
+</div>
+
+</body>
+</html>
